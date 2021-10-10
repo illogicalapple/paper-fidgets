@@ -342,6 +342,14 @@
 						next: ".glider-next"
 					}
 				});
+				document.addEventListener("keydown", function(event) {
+					if(event.which == 37) {
+						document.querySelector(".glider-prev").click();
+					}
+					if(event.which == 39) {
+						document.querySelector(".glider-next").click();
+					}
+				});
 			</script>
 		</main>
 	</body>
